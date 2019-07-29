@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace API.Models
 {
-    public class ItemViewModel
+    public class ItemDTO
     {
         public Guid Id { get; set; }
         public string Name { get; set; }

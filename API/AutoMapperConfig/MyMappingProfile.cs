@@ -11,8 +11,8 @@ namespace API.AutoMapperConfig
     {
         public MyMappingProfile()
         {
-            CreateMap<Item, ItemViewModel>();
-            CreateMap<ItemViewModel, Item>();
+            CreateMap<Item, ItemDTO>();
+            CreateMap<ItemDTO, Item>();
         }
     }
 }

@@ -25,11 +25,11 @@ namespace API.Controllers
 
         // GET: api/Items
         [HttpGet]
-        [ProducesResponseType(typeof(List<ItemViewModel>), 200)]
+        [ProducesResponseType(typeof(List<ItemDTO>), 200)]
         public async Task<IActionResult> Get()
         {
             var items = await _itemService.Get();
-            var itemViewModels = _mapper.Map<List<ItemViewModel>>(items);   // version with singleton AutoMapper
+            var itemViewModels = _mapper.Map<List<ItemDTO>>(items);   // version with singleton AutoMapper
             return Ok(itemViewModels);
         }
     }

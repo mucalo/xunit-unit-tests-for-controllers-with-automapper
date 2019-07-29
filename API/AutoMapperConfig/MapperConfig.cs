@@ -8,8 +8,8 @@ namespace API.AutoMapperConfig
         {
             AutoMapper.Mapper.Initialize(config =>
             {
-                config.CreateMap<Item, ItemViewModel>();
-                config.CreateMap<ItemViewModel, Item>();
+                config.CreateMap<Item, ItemDTO>();
+                config.CreateMap<ItemDTO, Item>();
             });
         }
     }

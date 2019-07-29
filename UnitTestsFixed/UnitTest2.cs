@@ -55,7 +55,7 @@ namespace UnitTestsFixed
             var result = (await controller.Get()) as OkObjectResult;
 
             // Assert
-            var items = Assert.IsType<List<ItemViewModel>>(result.Value);
+            var items = Assert.IsType<List<ItemDTO>>(result.Value);
             Assert.Equal(3, items.Count);
         }
     }
